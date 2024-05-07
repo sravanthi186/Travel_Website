@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson"');
+
+* {
+    font-family: 'Crimson', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 60.5%;
+}
+
+/* Header section */
+header {
+    width: 96%;
+    background: #ff9800; /* Change background color to orange */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+    padding: 32px;
+    transition: 2s linear;
+    z-index: 1000;
+}
+
+header.active {
+    top: 0;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Logo */
+header .logo {
+    color: #333;
+    font-size: 3rem;
+}
+
+/* Navbar */
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar ul li {
+    font-size: 2rem;
+    color: #333;
+    transition: 0.25s linear;
+    margin-right: 2rem; /* Add more space between links */
+}
+
+header .navbar ul li.active,
+header .navbar ul li a:hover {
+    color: #0098a1;
+}
+
+/* Hamburger Icon */
+header .fas.fa-bars {
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+}
+.home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding: 2rem 10cm;
+    }
+
+    .home video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .home .content {
+        margin-top: 7rem;
+    }
+
+    .home h2 {
+        font-size: 3.5rem;
+        color: #333;
+    }
+
+    .home .content p {
+        font-size: 2rem;
+        color: #fff; /* Change text color to white */
+        text-shadow: 0 0 35px #000;
+        padding-left: 2em;
+        border-left: 3px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .home .form-container {
+        margin-top: 0;
+        padding: 2rem;
+        width: 60rem; /* Adjust the width as needed */
+        background-color: #fff;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        margin-left: 5rem; /* Move the container further to the right */
+    }
+
+    .home .form-container h3 {
+        color: #333;
+        font-size: 3rem;
+        text-align: center;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
+        max-width: 100%; /* Set maximum width to 100% */
+    }
+
+    .home .form-container span {
+        color: #0098a1;
+        font-size: 2.5rem;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .home .form-container input {
+        width: 100%;
+        padding: 1rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        background: #eee;
+        border: none;
+        outline: none;
+        color: #333;
+        box-shadow: 1px 3px rgba(0, 0, 0, 0.3) inset;
+        border-radius: 5px;
+    }
+
+    .home .form-container input[type="submit"] {
+        width: 10rem;
+        color: #fff;
+        border-radius: 5px;
+        background: #009841;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-top: 2rem;
+        transition: 2s linear;
+    }
+
+    .home .form-container input[type="submit"]:hover {
+        border: 2px solid #0098a1;
+        color: #0098a1;
+        background: none;
+    }
+</style>
+
+</body>
+.feature {
+            min-height: 100vh;
+            background: #f9f9f9;
+        }
+#feature {
+    padding-top: 100px; /* Adjust this value to move the content further down */
+}
+
+
+        .feature .card-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .feature .heading {
+            text-align: center;
+            font-size: 3rem; /* Adjust the font size as needed */
+        }
+
+        .feature .card-container .card {
+            width: 30rem;
+            margin: 2rem;
+            background: #fff;
+            border-radius: 5rem;
+            box-shadow: 0.3rem 0.5rem rgba(0,0,0,.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .feature .card-container .card img {
+            height: 25rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .feature .card-container .content {
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+
+        .feature .card-container .content .title {
+            color: #0098a1;
+            font-size: 3rem;
+        }
+
+        .feature .card-container .content p {
+            color: #333;
+            font-size: 1.3rem;
+            padding: 1rem;
+        }
+
+        .feature .card-container .content .stars {
+            padding: 0.2rem;
+            font-size: 2rem;
+            color: gold;
+        }
+
+        .feature .card-container .content .btn {
+            font-size: 1.7rem;
+            margin-top: 1.4rem;
+            height: 3.5rem;
+            width: 12rem;
+            border-radius: 5rem;
+            outline: none;
+            border: none;
+            background: #0098a1;
+            color: #fff;
+            cursor: pointer;
+            transition: 2s linear;
+        }
+
+        .feature .card-container .content .btn:hover {
+            background: none;
+            border: 0.2rem solid #0098a1;
+            color: #0098a1;
+        }
+
+        .feature .card-container .card.discount {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: block;
+            height: 3.5rem;
+            width: 6rem;
+            background: #ff3300;
+            color: #fff;
+            line-height: 4rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /* Hide other sections */
+        .other-sections {
+            display: none;
+        }
+
+        /* Make the remaining space white */
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Featured Section -->
+    <section class="feature" id="feature">
+        <h2 class="heading">Featured Section</h2>
+        <div class="card-container">
+            <!-- Your card content goes here -->/* About Section */
+
+/* Gallery Section */
+.gallery {
+    min-height: 100vh;
+}
+#gallery {
+    padding-top: 100px; /* Adjust this value to move the content further down */
+}
+
+.gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery .box-container .box {
+    flex-basis: calc(33.33% - 4rem); /* Adjust the width as needed */
+    height: 20rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery .heading {
+            text-align: center;
+            font-size: 3rem; /* Adjust the font size as needed */
+        }
+
+
+.gallery .box-container .box .icons {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 2s linear;
+}
+
+.gallery .box-container .box:hover .icons {
+    opacity: 1;
+    top: 0;
+}
+
+.gallery .box-container .box .icons a {
+    color: #fff;
+    text-shadow: 0.1rem 0.3rem #000;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.gallery .box-container .box .icons a:hover {
+    color: #0098a1;
+}
+<section id="review" class="review">
+    <h1 class="heading"><span>r</span>eview</h1>
+    <div class="box-container">
+        <!-- First review box -->
+        <div class="box">
+            <div class="image">
+                <img src="images/pic1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Someone's Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque sequi in asperiores ea, nisi ullam?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <!-- Add more stars here -->
+                </div>
+            </div>
+        </div>
+        <!-- Second review box -->
+        <div class="box">
+            <div class="image">
+                <img src="images/pic2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Someone's Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque sequi in asperiores ea, nisi ullam?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <!-- Add more stars here -->
+                </div>
+            </div>
+        </div>
+        <!-- Third review box -->
+        <div class="box">
+            <div class="image">
+                <img src="images/pic3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Someone's Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque sequi in asperiores ea, nisi ullam?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <!-- Add more stars here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+/* Review section starts */
+
+.review {
+    background: url(../images/review-bg.jpg), linear-gradient(#0098a1, #0098a1) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+#review {
+    padding-top: 100px; /* Adjust this value to move the content further down */
+}
+
+
+/* Review heading */
+.review h1 {
+    color: #fff;
+    padding-bottom: 4em;
+}
+.review .heading {
+            text-align: center;
+            font-size: 3rem; /* Adjust the font size as needed */
+        }
+
+
+
+.review h1 span {
+    color: gold;
+}
+
+/* Review box container */
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Review box */
+.review .box-container .box {
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0.3rem 0.5rem #000;
+    background: #fff;
+}
+
+/* Review box image */
+.review .box-container .box .image img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    margin-top: -5rem;
+}
+/* Review section starts */
+.review {
+    background: url('../images/review-bg.jpg'), linear-gradient(#0098a1, #0098a1) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    color: #fff;
+    padding-bottom: 4em;
+}
+
+.review .heading span {
+    color: gold;
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review .box-container .box {
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0.3rem 0.5rem #000;
+    background: #fff;
+}
+
+.review .box-container .box .image {
+    margin-top: -5rem;
+}
+
+.review .box-container .box .image img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+
+.review .box-container .box .content {
+    font-size: 2rem;
+    color: #0098a1;
+}
+
+.review .box-container .box .content p {
+    font-size: 1.4rem;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+}
+
+.review .box-container .box .content .stars {
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem 1rem;
+}
+
+.review .box-container .box .content .stars i {
+    background-color: blue;
+    border-radius: 5px;
+}
+/* Review section ends */
+#client-section {
+  position: relative;
+  padding-top: 60px;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url('../bg.jpg');
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+#clients {
+  padding-top: 100px; /* Adjust this value to move the content further down */
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 0;
+  width: 200px; /* Set a fixed width */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+#clients img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+/* Other styles for the rest of your code */
+
+/* Center the heading within the client section */
+#client-section h1 {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed to move the heading down */
+}
+
+/* Other styles for the rest of your code */
+.contact {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+#contact {
+    padding-top: 100px; /* Adjust this value to move the content further down */
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.contact-info {
+    width: calc(50% - 20px);
+    text-align: left;
+    padding-right: 10px;
+}
+
+.feedback-form {
+    width: calc(50% - 20px);
+    padding-left: 10px;
+}
+
+.box {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+h1, h3 {
+    color: #007bff;
+    font-size: 24px;
+}
+
+p {
+    color: #007bff;
+    font-size: 18px;
+}
+
+
+.newsletter {
+    padding: 2rem;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/img5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.newsletter h1 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.newsletter p {
+    font-size: 2em;
+    color: #eee;
+    padding: 1rem 15rem;
+}
+.newsletter {
+    font-size: 2em;
+    color: #eee;
+    padding: 1rem 15rem;
+}
+
+.newsletter input {
+    outline: none;
+    border: none;
+    height: 5rem;
+}
+
+.newsletter form input[type="email"] {
+    width: 40rem;
+    padding: 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 2em;
+}
+
+.newsletter form input[type="email"]::placeholder {
+    color: #ccc;
+}
+
+.newsletter form input[type="submit"] {
+    width: 20rem;
+    color: #fff;
+    background: #0098a1;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: -1rem;
+    transition: 2s;
+}
+
+.newsletter form input[type="submit"]:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #222;
+}
+
+footer .credit {
+    font-size: 2rem;
+    color: #eee;
+}
+
+footer .credit span {
+    color: #0098a1;
+}
